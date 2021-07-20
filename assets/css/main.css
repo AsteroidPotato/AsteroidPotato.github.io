@@ -1,6 +1,14 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
+/*my changes to CSS*/
+#quote{
+	color: #ffffff;
+	max-height: 0;
+	transition: color 6s ease-in, max-height 6s ease-out;
+   
+}
+
 /*
 	Story by HTML5 UP
 	html5up.net | @ajlkn

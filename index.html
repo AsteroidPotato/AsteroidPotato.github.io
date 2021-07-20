@@ -24,19 +24,33 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<script>
-								function atlaAppear(){
-									document.getElementById("quote1").removeAttribute("hidden")
-									document.getElementById("quote2").removeAttribute("hidden")
+								function quoteAppear() {
+									quoteList = ["<i>\"The greatest illusion of this world is the illusion of separation.  <p></p><p>Things you think are separate and different are actually one and the same.\"<\p><\i>", 
+									 "<i>\"It's all really there!\"<\i>", "<i>\"We suddenly stopped in our tracks, and in the face of the enormity of \
+										the event we felt bound to everyone around us. For a few instants we ceased to see one \
+										another through our roles and perceived ourselves as equals, stripped down to the core \
+										of our common humanity. Like mountaineers high above the daily business of the \
+										world, we moved from vous to tu.\"<\i>"]
+
+									quote = Math.floor(Math.random()*quoteList.length)
+									
+									const elem = document.getElementById("quote")
+									elem.style.color = "#555555";
+									elem.style.maxHeight = "1000px";
+
+									elem.innerHTML = quoteList[quote]
+									document.getElementById("eqnEasterEgg").ondblclick = function() { return false; }
+
 
 								}
+								
 							</script>
 							<h1>Jude Bedessem</h1>
 							<p class="major">Welcome to my personal website and blog, where I write about life, the universe, and everything.</p>
-							<p style="text-align: center;" ondblclick="atlaAppear()">\(\partial_{\mu} J^{\mu} = 0 \)</p>
-							<p hidden id="quote1"> <i>"The greatest illusion of this world is the illusion of separation.</i></p>
-							<p hidden id="quote2"> <i>Things you think are separate and different are actually one and the same."</i></p>
+							<p id="eqnEasterEgg" style="text-align: center;" ondblclick="quoteAppear()">\(\partial_{\mu} J^{\mu} = 0 \)</p>
+							<p id="quote"> </p>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+								<li><a href="#first" class="button big wide smooth-scroll-middle">About Me</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -47,14 +61,14 @@
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>Magna etiam feugiat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<h2>About Me</h2>
+							<p>I am an undergraduate physics and math student at the College of William & Mary, where I am a member of our High Energy Theory Group and Ultra-Cold AMO Physics Laboratory. My current research concerns emergent theories of quantum gravity, 10D supergravity, and novel methods of darkground imaging.</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="documents/Jude_Bedessem_04-12-21_CV.pdf" class="button" target="_blank">My Resume</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
+							<img src="images/My AMO Lab.png" alt="" />
 						</div>
 					</section>
 
