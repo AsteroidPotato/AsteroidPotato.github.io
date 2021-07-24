@@ -2796,6 +2796,7 @@ input, select, textarea {
 			-ms-flex-direction: column;
 			flex-direction: column;
 			margin-left: 0;
+			margin-top: 1rem; /* my change */
 		}
 
 			ul.actions.stacked li {
@@ -5486,12 +5487,12 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 50%;
-			background-color: inherit;
+			background-color:  rgba(47, 211, 229, .9);
 			border-radius: 0.5rem;
 			margin-bottom: 2rem;
 			z-index: 1;
 		}
-
+		
 		.spotlight.style4 .image {
 			-moz-flex-grow: 0;
 			-webkit-flex-grow: 0;
